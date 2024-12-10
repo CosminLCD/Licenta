@@ -8,10 +8,15 @@ getLoc = loc.geocode("Cismigiu, Romania")
 lat_cluj= 46.772166
 long_cluj= 23.583807
 
+lat_coruia= 47.56480680803573
+long_coruia=23.60368731749156
+
+
 lat=getLoc.latitude
 long=getLoc.longitude
 map_start_point = folium.Map(location=[lat_cluj, long_cluj], zoom_start=13)
 folium.Marker([lat_cluj,long_cluj ], popup="Parcare Opera Maghiara").add_to(map_start_point)
+folium.Marker([lat_coruia,long_coruia ], popup="home").add_to(map_start_point)
 
 # entering the location name
 

@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8f1ba1ed6ddebd05e1a9541ac5291af7 {
+                #map_61c804b1e1c016e8cd0066d1c7d23beb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,20 +39,24 @@
 <body>
     
     
-            <div class="folium-map" id="map_8f1ba1ed6ddebd05e1a9541ac5291af7" ></div>
+            <div class="folium-map" id="map_61c804b1e1c016e8cd0066d1c7d23beb" ></div>
         
 </body>
 <script>
     
     
-            var map_8f1ba1ed6ddebd05e1a9541ac5291af7 = L.map(
-                "map_8f1ba1ed6ddebd05e1a9541ac5291af7",
+            var map_61c804b1e1c016e8cd0066d1c7d23beb = L.map(
+                "map_61c804b1e1c016e8cd0066d1c7d23beb",
                 {
                     center: [46.772166, 23.583807],
                     crs: L.CRS.EPSG3857,
-                    zoom: 13,
-                    zoomControl: true,
-                    preferCanvas: false,
+                    ...{
+  "maxBounds": null,
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
                 }
             );
 
@@ -60,31 +64,77 @@
 
         
     
-            var tile_layer_7e05d34c2c08f13129e3f6d84fc86f26 = L.tileLayer(
+            var tile_layer_a9275084c878cd85450d0ead21241662 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
             );
         
     
-            tile_layer_7e05d34c2c08f13129e3f6d84fc86f26.addTo(map_8f1ba1ed6ddebd05e1a9541ac5291af7);
+            tile_layer_a9275084c878cd85450d0ead21241662.addTo(map_61c804b1e1c016e8cd0066d1c7d23beb);
         
     
-            var marker_3918726f019142b2a7b6e6264a72bba8 = L.marker(
+            var marker_9e336d000915882ace82e9d3f93cad1f = L.marker(
                 [46.772166, 23.583807],
-                {}
-            ).addTo(map_8f1ba1ed6ddebd05e1a9541ac5291af7);
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_61c804b1e1c016e8cd0066d1c7d23beb);
         
     
-        var popup_f364fd07341368a31efb8466cdafaa3f = L.popup({"maxWidth": "100%"});
+        var popup_5a9419aea9568cc0685df61ef330dcc1 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
 
         
             
-                var html_bba9b224a88064858a23620e4c0fcb52 = $(`<div id="html_bba9b224a88064858a23620e4c0fcb52" style="width: 100.0%; height: 100.0%;">Parcare Opera Maghiara</div>`)[0];
-                popup_f364fd07341368a31efb8466cdafaa3f.setContent(html_bba9b224a88064858a23620e4c0fcb52);
+                var html_bf673ff00dc1e6bf4a13fce4f2feb8da = $(`<div id="html_bf673ff00dc1e6bf4a13fce4f2feb8da" style="width: 100.0%; height: 100.0%;">Parcare Opera Maghiara</div>`)[0];
+                popup_5a9419aea9568cc0685df61ef330dcc1.setContent(html_bf673ff00dc1e6bf4a13fce4f2feb8da);
             
         
 
-        marker_3918726f019142b2a7b6e6264a72bba8.bindPopup(popup_f364fd07341368a31efb8466cdafaa3f)
+        marker_9e336d000915882ace82e9d3f93cad1f.bindPopup(popup_5a9419aea9568cc0685df61ef330dcc1)
+        ;
+
+        
+    
+    
+            var marker_52f37a35ec1f7a43bcc2de77d700f039 = L.marker(
+                [47.56480680803573, 23.60368731749156],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_61c804b1e1c016e8cd0066d1c7d23beb);
+        
+    
+        var popup_1c84f12848ce74186036b010e1d08211 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_23051cdb17c42fc931f13b3ea1d3be2d = $(`<div id="html_23051cdb17c42fc931f13b3ea1d3be2d" style="width: 100.0%; height: 100.0%;">home</div>`)[0];
+                popup_1c84f12848ce74186036b010e1d08211.setContent(html_23051cdb17c42fc931f13b3ea1d3be2d);
+            
+        
+
+        marker_52f37a35ec1f7a43bcc2de77d700f039.bindPopup(popup_1c84f12848ce74186036b010e1d08211)
         ;
 
         
